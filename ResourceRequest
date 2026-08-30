@@ -1,0 +1,11 @@
+public class ResourceRequest {
+
+    @NotBlank(message = "Resource name is required")
+    private String name;
+
+    private String description;
+
+    private boolean available = true;
+
+    // getters and setters
+}
