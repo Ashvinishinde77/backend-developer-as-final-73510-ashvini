@@ -16,4 +16,9 @@ public class ReservationRequest {
     private ReservationStatus status;
 
     // getters and setters
+    if (!request.getEndTime().isAfter(request.getStartTime())) {
+    throw new IllegalArgumentException(
+        "End time must be after start time"
+    );
+
 }
